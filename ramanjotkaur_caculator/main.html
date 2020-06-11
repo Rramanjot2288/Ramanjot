@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="javascript/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Scientific calculator</h1>
+    </header>
+    <form>
+        <table>
+            <tr>
+                <td colspan=5><input id="inputchar"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="b3" value="&#177;" onclick="sign(this.form.inputchar)"></td>
+                <td><input type="button" id="b3" value="(" onclick="inputvalue(this.form.inputchar, '(')"></td>
+                <td><input type="button" id="b3" value=")" onclick="inputvalue(this.form.inputchar,')')"></td>
+                <td><input type="button" id="b3" value="exp" onclick="exp(this.form)"></td>
+                <td><input type="button" id="b3" value="DEL" onclick="deleteVal(this.form.inputchar)"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" id="b3" value="%" onclick=" percentage(this.form.inputchar)"></td>
+                <td><input type="button" id="b3" value="Sqrt" onclick="sqrt(this.form)"></td>
+                <td><input type="button" id="b3" value="cos" onclick="cos(this.form)"></td>
+                <td><input type="button" id="b3" value="sin" onclick="sin(this.form)"></td>
+                <td><input type="button" id="b3" value="tan" onclick="tan(this.form)"></td>
+
+            </tr>
+
+            <tr>
+                <td><input type="button" id="b3" value="log" onclick="log(this.form)"></td>
+                <td><input type="button" id="b1" value="7" onclick="inputvalue(this.form.inputchar, '7')"></td>
+                <td><input type="button" id="b1" value="8" onclick="inputvalue(this.form.inputchar, '8')"></td>
+                <td><input type="button" id="b1" value="9" onclick="inputvalue(this.form.inputchar, '9')"></td>
+                <td><input type="button" id="b3" value="x2" onclick="square(this.form)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" id="b2" value="/" onclick="inputvalue(this.form.inputchar, '/')"></td>
+                <td><input type="button" id="b1" value="4" onclick="inputvalue(this.form.inputchar, '4')"></td>
+                <td><input type="button" id="b1" value="5" onclick="inputvalue(this.form.inputchar, '5')"></td>
+                <td><input type="button" id="b1" value="6" onclick="inputvalue(this.form.inputchar, '6')"></td>
+                <td><input type="button" id="b2" value="*" onclick="inputvalue(this.form.inputchar, '*')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" id="b2" value="+" onclick="inputvalue(this.form.inputchar, '+')"></td>
+                <td><input type="button" id="b1" value="1" onclick="inputvalue(this.form.inputchar, '1')"></td>
+                <td><input type="button" id="b1" value="2" onclick="inputvalue(this.form.inputchar, '2')"></td>
+                <td><input type="button" id="b1" value="3" onclick="inputvalue(this.form.inputchar, '3')"></td>
+                <td><input type="button" id="b2" value="-" onclick="inputvalue(this.form.inputchar, '-')"></td>
+
+            </tr>
+
+            <tr>
+                <td><input type="button" id="b2" value="." onclick="inputvalue(this.form.inputchar, '.')"></td>
+                <td><input type="button" id="b2" value="PI" onclick="inputvalue(this.form.inputchar,'3.14159265')"></td>
+                <td><input type="button" id="b1" value="0" onclick="inputvalue(this.form.inputchar, '0')"></td>
+                <td><input type="button" id="b2" value="C" onclick="this.form.inputchar.value=  0 "></td>
+                <td><input type="button" id="b2" value="=" onclick="final(this.form)"></td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <p>calculator<br><a href="mailto:ramanjot@kaur.com">ramanjot@kaur.com</a></p>
+    </footer>
+</body>
+
+</html>

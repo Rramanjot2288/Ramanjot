@@ -1,0 +1,38 @@
+body {
+    padding-right: 50%;
+    padding-left: 30%;
+    background-color: bisque;
+}
+
+input {
+    width: 100%;
+    height: 5px;
+    padding: 35px 25px;
+    font-size: 24px;
+}
+
+h1 {
+    padding-left: 130px;
+    text-align: center;
+}
+
+footer {
+    padding-left: 166px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#b1 {
+    background-color: #008CBA;
+    color: black;
+}
+
+#b2 {
+    background-color: lightblue;
+    color: black;
+}
+
+#b3 {
+    background-color: #CCE2F5;
+    color: black;
+}
